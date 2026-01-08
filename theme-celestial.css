@@ -1,0 +1,44 @@
+/* Tema “Zeke”: dourado, branco, azul-gelo */
+:root {
+    --white-celestial: #FFFFFF;
+    --off-white: #F8F6F0;
+    --golden-stellar: #D4AF37;
+    --blue-ice: #E6F2FF;
+    --soft-shadow: #2C2C2C;
+}
+
+body {
+    background-color: var(--off-white);
+    color: var(--soft-shadow);
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--golden-stellar);
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+.banner {
+    background-color: var(--blue-ice);
+    text-align: center;
+    padding: 4rem 1rem;
+    position: relative;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, transparent, var(--golden-stellar), transparent); /* Cauda estilizada como borda inferior */
+}
+
+.about-img, .product-img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
