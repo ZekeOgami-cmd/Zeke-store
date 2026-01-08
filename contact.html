@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Zeke Store</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Lora&family=Noto+Sans&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-celestial.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/utils.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/img/logo.svg" alt="Logo Zeke" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="cart.html"><img src="assets/img/icons/cart.svg" alt="Carrinho"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h1>Entre em Contato ✦</h1>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Enviar ⭐</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Zeke Store. Todos os direitos reservados. 🌙</p>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (validateForm()) {
+                alert('Mensagem enviada! 🌙'); // Placeholder para envio real
+            }
+        });
+    </script>
+</body>
+</html>

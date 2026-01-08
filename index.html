@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeke Store - Vitrine Celestial</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Lora&family=Noto+Sans&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-celestial.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml"> <!-- Favicon simples; para piscar, use JS ou GIF -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/products.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/img/logo.svg" alt="Logo Zeke" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="cart.html"><img src="assets/img/icons/cart.svg" alt="Carrinho"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner" style="background-image: url('assets/img/banners/home-banner.jpg');">
+            <h1>Bem-vindo à Zeke Store ✦</h1>
+            <p>Peças celestiais com toque de lobo estelar.</p>
+        </section>
+        <section class="vitrine">
+            <h2> Destaques</h2>
+            <div id="featured-products" class="product-grid">
+                <!-- Produtos carregados via JS -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Zeke Store. Todos os direitos reservados. 🌙</p>
+    </footer>
+    <script>
+        // Carregar destaques
+        document.addEventListener('DOMContentLoaded', () => {
+            const featured = products.slice(0, 3); // Primeiros 3 produtos
+            loadProducts(featured, 'featured-products');
+        });
+    </script>
+</body>
+</html>

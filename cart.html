@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Zeke Store</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Lora&family=Noto+Sans&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-celestial.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/cart.js" defer></script>
+    <script src="assets/js/utils.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/img/logo.svg" alt="Logo Zeke" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="cart.html"><img src="assets/img/icons/cart.svg" alt="Carrinho"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart">
+            <h1>Seu Carrinho ✦</h1>
+            <div id="cart-items"></div>
+            <p id="cart-total"></p>
+            <button onclick="clearCart()">Limpar Carrinho</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Zeke Store. Todos os direitos reservados. 🌙</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadCart();
+        });
+    </script>
+</body>
+</html>
